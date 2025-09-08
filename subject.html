@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartClassroom • Subject</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">SmartClassroom</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classroom.html">Classroom</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="batch.html">Batch</a></li>
+      <li><a class="active" href="subject.html">Subject</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="form-title">📘 Add Subject</div>
+  <form class="form-wrap" id="subjectForm" data-smart>
+    <div class="form-grid">
+      <input required name="name" placeholder="Subject Name">
+      <input required name="code" placeholder="Subject Code (e.g., CS101)">
+      <input required type="number" min="1" max="6" name="credits" placeholder="Credits">
+      <select required name="semester">
+        <option value="">Semester</option>
+        <option>I</option><option>II</option><option>III</option><option>IV</option>
+        <option>V</option><option>VI</option><option>VII</option><option>VIII</option>
+      </select>
+      <input required name="department" placeholder="Department (e.g., CSE, ECE)">
+      <textarea class="full" name="desc" placeholder="Short description (optional)"></textarea>
+    </div>
+    <div class="form-actions"><button class="btn primary" type="submit">Add Subject</button></div>
+  </form>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><h3>Smart Classroom</h3><p>Designed to save time and improve efficiency.</p></div>
+    <div><h3>Quick Links</h3>
+     <p>
+        <a href="index.html">Home</a><br>
+        <a href="classroom.html">Classrooms</a><br>
+        <a href="faculty.html">faculty</a><br>
+        <a href="batch.html">Batch</a><br>
+        <a href="subject.html">Subjects</a><br>
+        <a href="timetable.html">Timetable</a><br>   
+     </p>
+    </div>
+    <div><h3>Contact</h3><p>Email: saeedanwar0930@gmail.com<br>Phone: +91 8271480524</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

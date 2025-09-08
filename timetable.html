@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartClassroom • Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">SmartClassroom</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classroom.html">Classroom</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="batch.html">Batch</a></li>
+      <li><a href="subject.html">Subject</a></li>
+      <li><a class="active" href="timetable.html">Timetable</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="form-title">🗓️ Create Timetable Entry</div>
+  <form class="form-wrap" id="timetableForm" data-smart>
+    <div class="form-grid">
+      <select required name="day">
+        <option value="">Day</option>
+        <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+        <option>Thursday</option><option>Friday</option><option>Saturday</option>
+      </select>
+      <input required type="time" name="start" placeholder="Start Time">
+      <input required type="time" name="end" placeholder="End Time">
+      <input required name="subject" placeholder="Subject">
+      <input required name="faculty" placeholder="Faculty">
+      <input required name="classroom" placeholder="Classroom">
+      <input required name="batch" placeholder="Batch / Section">
+      <select required name="type">
+        <option value="">Type</option>
+        <option>Lecture</option><option>Lab</option><option>Tutorial</option>
+      </select>
+    </div>
+    <div class="form-actions"><button class="btn primary" type="submit">Add Slot</button></div>
+    <p class="helper">Note: This page is front-end only. Persist to DB when backend is ready.</p>
+  </form>
+
+  <div class="section">
+    <div class="card">
+      <h3 style="margin-bottom:10px;color:var(--brand)">Today’s Overview (demo)</h3>
+      <div class="pills">
+        <span class="pill">09:00 - DS • Lab • R-102</span>
+        <span class="pill">11:00 - OOPS • Lecture • R-205</span>
+        <span class="pill">14:00 - DBMS • Tutorial • R-110</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><h3>Smart Classroom</h3><p>Designed to save time and improve efficiency.</p></div>
+<div><h3>Quick Links</h3>
+     <p>
+        <a href="index.html">Home</a><br>
+        <a href="classroom.html">Classrooms</a><br>
+        <a href="faculty.html">faculty</a><br>
+        <a href="batch.html">Batch</a><br>
+        <a href="subject.html">Subjects</a><br>
+        <a href="timetable.html">Timetable</a><br>   
+     </p>
+    </div>    <div><h3>Contact</h3><p>Email: saeedanwar0930@gmail.com<br>Phone: +91 8271480524</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

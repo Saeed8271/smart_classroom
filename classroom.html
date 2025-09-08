@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartClassroom • Classroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">SmartClassroom</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="classroom.html">Classroom</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="batch.html">Batch</a></li>
+      <li><a href="subject.html">Subject</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="form-title">➕ Add Classroom</div>
+  <form class="form-wrap" id="classroomForm" data-smart>
+    <div class="form-grid">
+      <input required name="name" placeholder="Classroom Name (e.g., Room 101)">
+      <input required type="number" min="1" name="capacity" placeholder="Capacity (e.g., 60)">
+      <input required name="location" placeholder="Location (e.g., First Floor)">
+      <select required name="resources">
+        <option value="">Resources Available</option>
+        <option>Projector</option>
+        <option>Smart Board</option>
+        <option>AC</option>
+        <option>Mic + Speakers</option>
+      </select>
+      <textarea class="full" name="notes" placeholder="Notes (optional)"></textarea>
+    </div>
+    <div class="form-actions"><button class="btn primary" type="submit">Save Classroom</button></div>
+    <p class="helper">Tip: Add multiple rooms quickly. We’ll clear the form after each save.</p>
+  </form>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><h3>Smart Classroom</h3><p>A modern solution to manage classrooms, faculties, subjects and timetables intelligently.</p></div>
+<div><h3>Quick Links</h3>
+     <p>
+        <a href="index.html">Home</a><br>
+        <a href="classroom.html">Classrooms</a><br>
+        <a href="faculty.html">faculty</a><br>
+        <a href="batch.html">Batch</a><br>
+        <a href="subject.html">Subjects</a><br>
+        <a href="timetable.html">Timetable</a><br>   
+     </p>
+    </div>    <div><h3>Contact</h3><p>Email: saeedanwar0930@gmail.com<br>Phone: +91 8271480524</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
