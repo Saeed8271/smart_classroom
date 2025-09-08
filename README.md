@@ -12,4 +12,8 @@ It empowers educational institutions with intelligent scheduling, making academi
 - 👨‍🏫 **Faculty Section** – Manage faculty profiles and their assigned classes.  
 - 👥 **Batch Section** – Organize students into batches for better management.  
 - 📚 **Subjects** – Add and categorize subjects efficiently.  
+
 - ⏰ **Timetable** – Create and manage intelligent schedules for classes.
+
+
+live demo : https://saeed8271.github.io/smart_classroom/
